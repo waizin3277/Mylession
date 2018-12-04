@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function del(){
+      var co=confirm('Are You sure');
+      if(co){
+        location.href='/users/delete/<%=user1._id%>';
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text primary text-center bg info">User details</h1>
+    </div>
+    Name:<%=user1.name%><p>
+    Email:<%=user1.email%><p>
+    Password:<%=user1.password%><p>
+
+  </body>
+</html>
